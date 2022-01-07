@@ -25,7 +25,7 @@ a:hover {
 button {
   background-color: olive;
   border: 0;
-  padding: 3%;
+  padding: 1%;
   color: rgb(146, 3, 3);
   font-weight: bold;
   transition: background-color .1s;
@@ -207,6 +207,10 @@ align-items: center;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
+}
+
+#login-wrapper button{
+width: 100%;
 }
 
 footer {
