@@ -1,0 +1,34 @@
+<section>
+  <div class="wrapper" id="new-post-wrapper">
+    <h2>Create A New Chatterstorm!</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Name Your Storm:</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-text">Whatcha Wanna Chat About?</label>
+      <input id="post-text" name="post-text" />
+    </div>
+    <button type="submit" >Create</button>
+  </form>
+  </div>
+  
+</section>
+
+{{#if posts.length}}
+<section>
+  <h2 style="color: rgb(146, 3, 3);">Your Previous Storm's</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>

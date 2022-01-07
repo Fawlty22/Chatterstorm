@@ -8,24 +8,25 @@ body, html {
   margin: 0;
   font-family: sans-serif;
   color: #333;
+  background-color: wheat;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: rgb(146, 3, 3);
   font-weight: bold;
   transition: color .1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: white;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: olive;
   border: 0;
   padding: 1%;
-  color: white;
+  color: rgb(146, 3, 3);
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -33,7 +34,8 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: rgb(122, 175, 17);
+  color: rgb(146, 3, 3);
 }
 
 .post-list {
@@ -53,7 +55,7 @@ textarea:focus, input:focus {
 }
 
 textarea {
-  min-width: 40%;
+  min-width: 100%;
   min-height: 100px;
 }
 
@@ -76,10 +78,14 @@ form label {
 
 header {
   border-bottom: 1px solid #ccc;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  font-size: x-large;
+  background-color: olive;
+  width: 100%;
 }
 
 header h1 {
@@ -97,7 +103,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: rgb(146, 3, 3);
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -106,7 +112,7 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: white;
 }
 
 .delete-post-btn {
@@ -120,12 +126,39 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border: rgb(146, 3, 3) 2px solid;
+  border-radius: 5px;
+  padding: 2%;
+  background-color: rgb(177, 177, 177);
 }
 
-.post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
+#new-post-wrapper {
+  border-radius: 5px;
+  border:rgb(146, 3, 3) solid 2px;
+  width: 40%;
+  display: flex;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-post-wrapper h2 {
+  margin-top: 0;
+  color: rgb(146, 3, 3);
+}
+
+#new-post-wrapper button {
+padding: 3%;
+;
+}
+
+
+.post-text-div {
+  background-color: whitesmoke;
+border: solid rgb(146, 3, 3) 1px;
+border-radius: 5px;
+padding: 1%;
+margin: 1%;
 }
 
 .edit-link {
@@ -133,13 +166,9 @@ main {
   margin: -1.5% 0 2% 0;
 }
 
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
+.comments{
+  border-radius: 5px;
+  border:rgb(146, 3, 3) solid 2px;
 }
 
 .comment-form {
@@ -148,7 +177,7 @@ main {
 
 .comment {
   padding: 1%;
-  margin-bottom: 1%;
+  border-radius: 5px;
 }
 
 .comment:nth-child(odd) {
@@ -160,6 +189,15 @@ main {
   margin-bottom: .5%;
   opacity: .6;
 }
+.post .meta {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.post .meta p {
+  font-weight: 600;
+}
 
 .new-post-form input {
   width: 300px;
@@ -167,6 +205,12 @@ main {
 
 .edit-post-form {
   margin-bottom: 5%;
+}
+
+#login-wrapper{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 
 footer {
