@@ -25,7 +25,7 @@ a:hover {
 button {
   background-color: olive;
   border: 0;
-  padding: 1%;
+  padding: 3%;
   color: rgb(146, 3, 3);
   font-weight: bold;
   transition: background-color .1s;
@@ -44,7 +44,7 @@ button:hover {
 }
 
 textarea, input {
-  padding: .5%;
+  padding: 2%;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -147,10 +147,6 @@ main {
   color: rgb(146, 3, 3);
 }
 
-#new-post-wrapper button {
-padding: 3%;
-;
-}
 
 
 .post-text-div {
