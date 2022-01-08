@@ -128,8 +128,11 @@ main {
   line-height: 150%;
   border: rgb(146, 3, 3) 2px solid;
   border-radius: 5px;
-  padding: 2%;
   background-color: rgb(177, 177, 177);
+}
+
+.post a {
+margin: 2%;
 }
 
 #new-post-wrapper {
@@ -191,9 +194,18 @@ justify-content: right;
 align-items: center;
 }
 
-.post .meta p {
-  font-weight: 600;
+.post-header{
+background-color: olive;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
+
+.post-header p {
+  font-weight: 600;
+  margin: 2%;
+}
+
 
 .new-post-form input {
   width: 300px;
